@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2 Entrega 2.3 - Jaume Blanco</title>
+</head>
+<body>
+    <h2>Sprint 2 Entrega 2.3: Función memoize</h2>
+    <p>Introduce la posición de la secuencia de Fibonacci cuyo valor quieras ver por pantalla y luego pulsa el botón.</p>
+    <p>Sin función memoize: cada vez que elegimos una posición se ejecuta el cálculo, aunque ya se hubiese hecho antes para la misma posición.</p>
+    <p>Con función memoize: si una posición ya la habíamos ejecutado, entonces se almacena en la memoria caché su valor y las siguientes veces en que introduzcamos esa misma posición devolverá el valor al instante sin necesidad de volver a calcularlo.</p>
+    <br>
+    <p>Se recomienda no poner posición superior a la 45 para no colgar el navegador.</p>
+    <p><b>Sin función memoize:</b></p>
+    <p>Escribe la posición: <input id = "position" type = "number"> <button onclick = "withoutMemoize()">Calcula</button></p>
+    <p id = "result"></p>
+    <br>
+    <p><b>Con función memoize:</b></p>
+    <p>Escribe la posición: <input id = "position_memoize" type = "number"> <button onclick = "withMemoize()">Calcula</button></p>
+    <p id = "result_memoize"></p>
+  
+
+    <script src = "./dist/app/memoizeFE.js"></script>
+</body>
+</html>
