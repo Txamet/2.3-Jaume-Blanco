@@ -8,6 +8,7 @@ Instalar los siguientes módulos en la terminal:
 - npm i -D jest typescript ts-jest @types/jest
 - npm i chalk@4.1.2
 - tsc -init
+- npx tsc
   
 # Test
 Realizado con Jest, comprueba que la función memoize almacena datos en caché, que ejecuta correctamente la función que tiene como parámetro y que se ejecuta sólo una vez cada vez que se la llama cuando ya tiene el resultado en caché.
@@ -18,7 +19,7 @@ Para ejecutar el test, en la carpeta raíz escribir en la terminal:
 # CLI
 Realizado con la interfaz de Readline, que viene integrado en node. Para ejecutarlo:
 
-- npm run debounce
+- npm run memoize
 
 Este programa muestra cómo la función memoize almacena en caché el resultado obtenido al buscar el valor en una posición determinada dentro de la secuencia de Fibonacci.
 Al introducir la posición la primera vez el programa tarda en procesar la operación pero, gracias a la función memoize, cada vez que volvamos a buscar esa posición el resultado es inmediato ya que no tiene que volver a calcularlo.
