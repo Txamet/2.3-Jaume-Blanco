@@ -22,6 +22,7 @@ Realizado con la interfaz de Readline, que viene integrado en node. Para ejecuta
 - npm run memoize
 
 Este programa muestra cómo la función memoize almacena en caché el resultado obtenido al buscar el valor en una posición determinada dentro de la secuencia de Fibonacci.
+
 Al introducir la posición la primera vez el programa tarda en procesar la operación pero, gracias a la función memoize, cada vez que volvamos a buscar esa posición el resultado es inmediato ya que no tiene que volver a calcularlo.
 
 # Front End
